@@ -1,6 +1,13 @@
 # Launching
 NUT - Launching website &amp; contract
 # Setup
-Run yarn install
-Run yarn serve -s build -l 3000
-Change 3000 to other port if you want.
+- Run yarn install
+- Run yarn serve -s build -l 3000
+- Change 3000 to other port if you want.
+
+# Contracts
+- ROUTER_ADDRESS = 0x62de7269D2C99802B732858F9ba6E95CFF2c85E4
+- FACTORY_ADDRESS = 0x22a51E1ECb0a50EE159193b7450F36D3B148ebB4
+- STAKING_REWARDS (HT - NUT) = 0x7c59267005c00dE0C90209274e7dda031a48399d
+- STAKING_REWARDS (HUSD - NUT) = 0x246BBf0B3f03Cb8405EE078823704b5789d735C4
+- STAKING_REWARDS (USDT - NUT) =  0xb2Bf47BDD97644967A22a8F96dE23b13dCfEb036
