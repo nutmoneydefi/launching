@@ -526,12 +526,12 @@ contract StakingRewards is IStakingRewards, RewardsDistributionRecipient, Reentr
     }
 
     function withdraw(uint256 amount) public nonReentrant updateReward(msg.sender) {
-        require(amount > 0, "Cannot withdraw 0");
+		require(amount > 0, "Cannot withdraw 0");
 		require(amount <= _totalsupply && amount <= _balances[msg.sender), "Insufficient account balance or total amount");
         _totalSupply = _totalSupply.sub(amount);
         _balances[msg.sender] = _balances[msg.sender].sub(amount);
         stakingToken.safeTransfer(msg.sender, amount);
-        emit Withdrawn(msg.sender, amount);
+        emit Withdrawn(msg.sender, amount); 
     }
 
     function getReward() public nonReentrant updateReward(msg.sender) {
